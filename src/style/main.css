@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+}
+
+/* ? Jumbotron */
+.jumbotron {
+  background-image: url(../img/jumbotron.jpg);
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.jumbotron .display-4 {
+  margin-top: 150px;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron h6 {
+  font-size: 15px;
+  margin: 10px 0 20px 0;
+}
+
+.jumbotron button {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/* Services */
+.service .bg {
+  text-align: center;
+  height: 540px;
+  background-image: url(../img/bg-food.jpg);
+  background-size: cover;
+  margin-left: -50px;
+  opacity: 15%;
+  /* margin-bottom: 200px; */
+}
+
+.service .container h6 {
+  text-align: center;
+  color: black;
+  line-height: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: -320px;
+  margin-bottom: 300px;
+}
+
+/* Product */
+.product {
+  text-align: center;
+  background-color: #dadada;
+  height: 6000px;
+}
+
+.product h3 {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.product .card {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.product .card h5 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.product .card img:hover {
+  /* background-color: grey; */
+  opacity: 70%;
+}
+
+/* contact */
+.contact {
+  width: 100%;
+  background-color: #242424;
+  color: white;
+}
+
+.contact h3 {
+  text-transform: uppercase;
+  margin-top: 50px;
+  font-size: 15px;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  text-align: justify;
+  color: #acacac;
+  font-size: 13px;
+}
+
+.contact h6 {
+  text-align: left;
+  color: #acacac;
+}
+
+.contact h6 span {
+  float: right;
+}
+
+.contact .days::after {
+  content: "";
+  display: block;
+  border-bottom: 1px dotted #acacac;
+  margin-top: 5px;
+}
+
+.icon {
+  margin: 0 15px 20px 0;
+}
+
+/* footer */
+footer {
+  background-color: #242424;
+  color: white;
+  height: 75px;
+  width: 100%;
+  border-top: 2px solid #acacac;
+}
+
+footer p {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 10px;
+}
+
+/* ? Desktop Version */
+@media (min-width: 992px) {
+  .nav-link {
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid black;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -7px;
+  }
+
+  .jumbotron .display-4 {
+    margin-top: 120px;
+    font-size: 65px;
+  }
+
+  .jumbotron h6 {
+    font-size: 20px;
+  }
+
+  .service .bg {
+    margin-left: 50px;
+  }
+  .service .container h6 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .product {
+    height: 1080px;
+  }
+
+  .product .card h5 {
+    font-size: 15px;
+  }
+
+  .contact {
+    height: 600px;
+  }
+
+  .contact h3 {
+    margin-top: 200px;
+    font-size: 20px;
+  }
+}
